@@ -1,0 +1,7 @@
+﻿<Solution>
+  <Folder Name="/Platforms/">
+    <Project Path="example.DesktopVK/example.DesktopVK.csproj" />
+  </Folder>
+  <Project Path="example.Content/example.Content.csproj" />
+  <Project Path="example.Core/example.Core.csproj" />
+</Solution>

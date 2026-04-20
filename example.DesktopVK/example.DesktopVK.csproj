@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>example</AssemblyName>
+    <MonoGamePlatform>DesktopVK</MonoGamePlatform>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- <ProjectReference
+      Include="..\..\MonoGame\src\NuGetPackages\MonoGame.Framework\MonoGame.Framework.csproj" />
+    <ProjectReference
+      Include="..\..\MonoGame\src\NuGetPackages\MonoGame.Runtime.Linux.Vulkan\MonoGame.Runtime.Linux.Vulkan.csproj"
+    />
+    <ProjectReference
+      Include="..\..\MonoGame\src\NuGetPackages\MonoGame.Runtime.Mac.Vulkan\MonoGame.Runtime.Mac.Vulkan.csproj"
+    /> -->
+    <PackageReference Include="MonoGame.Framework.Content.Pipeline" Version="3.8.5-preview.4" />
+    <PackageReference Include="MonoGame.Framework.Native" Version="3.8.5-preview.4" />
+    <PackageReference Include="MonoGame.Runtime.Windows.Vulkan" Version="3.8.5-preview.4" />
+    <PackageReference Include="MonoGame.Runtime.Linux.Vulkan" Version="3.8.5-preview.4" />
+    <PackageReference Include="MonoGame.Runtime.Mac.Vulkan" Version="3.8.5-preview.4" />
+  </ItemGroup>
+  <Import Project="..\example.Content\BuildContent.targets" />
+</Project>
